@@ -1,8 +1,15 @@
 <% provide(:title, 'Home') %>
 
-<h1>Select Baseball Tryouts</h1>
-<p>
-  This is the home page for the
-  Select Baseball Tryouts.
-</p>
+<div class="Home">
+    <h1>Welcome To Select Baseball Tryouts</h1>
+        <p>
+            Create an account to post your tryout information.
+        </p>
+    <%= link_to "Sign up now!", signup_path, class: "" %>
+         <p>
+             Search for tryouts in your area.
+         </p>
+        <%= link_to "Search tryouts now!", "#", class: "" %>
+</div>
+
 
