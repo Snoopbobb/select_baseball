@@ -13,7 +13,7 @@
  */
 
 body {
-    font-family: helvetica, arial, sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 .header {
@@ -49,8 +49,11 @@ header ul li {
 }
 
 .content {
+    clear: both;
     text-align: center;
+    margin: auto;
 }
+
 
 .content a:visited {
     color: blue;
