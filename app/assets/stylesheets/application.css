@@ -45,7 +45,7 @@ header a:visited {
 }
 
 header ul li {
-    display: inline;
+    display: inline-block;
 }
 
 .content {
