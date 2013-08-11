@@ -1,0 +1,25 @@
+<%= form_for (@tryout), :url => {:action => :create, :controller => 'tryout'} do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.label :date %>
+      <%= f.text_field :date %>
+
+      <%= f.label :address %>
+      <%= f.text_field :address %>
+
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+
+      <%= f.label :state %>
+      <%= f.select :state, us_states %>
+
+      <%= f.label :ages %>
+      <%= f.text_field :ages %>
+
+      <%= f.label :contact, "Contact Information" %>
+      <%= f.text_field :contact %>
+
+      <%= f.text_area :info, placeholder: "Additional Information..." %>
+    </div>
+    <%= f.submit "Post", class: "" %>
+<% end %>

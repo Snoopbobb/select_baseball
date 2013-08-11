@@ -1,0 +1,11 @@
+<li>
+  <span class="content"><%= tryout.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(tryout.created_at) %> ago.
+  </span>
+  <% if current_user?(tryout.user) %>
+      <%= link_to "delete", tryout, method: :delete,
+                  data: { confirm: "You sure?" },
+                  title: tryout.content %>
+  <% end %>
+</li>
